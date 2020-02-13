@@ -26,7 +26,7 @@ for filename in filesCSVSachinRavi:
             else:
                 images[row[1]] = [row[0]]
 
-        print('Writing photos....', images)
+        print('Writing photos....', images.keys())
         for c in tqdm(images.keys()): # Iterate over all the classes
             lst_files = []
             for file in glob.glob(pathminiImageNet + "/*"+c+"*"):
